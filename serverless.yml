@@ -68,12 +68,6 @@ provider:
 plugins:
   - serverless-plugin-typescript
   - serverless-plugin-stage-variables
-  - serverless-s3bucket-sync
-
-custom:
-  s3-sync:
-    - folder: wwwroot
-      bucket: "${env:${self:provider.stage}_SITE_BUCKET}"
 
 functions:
   list:
